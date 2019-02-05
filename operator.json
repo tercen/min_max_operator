@@ -1,0 +1,10 @@
+{
+  "name": "Max",
+  "description": "Return the max value of a cell",
+  "tags": ["basic statistics"],
+  "authors": ["tercen"],
+  "urls": ["https://github.com/tercen/max_operator"],
+  "properties": []
+}
+
+
