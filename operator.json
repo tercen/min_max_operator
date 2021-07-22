@@ -1,6 +1,6 @@
 {
   "name": "Max",
-  "description": "Return the max value of a cell",
+  "description": "Calculate the maximum value in a cell",
   "tags": ["basic statistics"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/max_operator"],
