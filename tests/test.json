@@ -1,0 +1,13 @@
+{
+  "kind": "OperatorUnitTest",
+  "name": "max_operator",
+  "namespace": "ds0",
+  "inputDataUri": "c03_simple_exp.tsv",
+  "outputDataUri": ["table1.csv"],
+  "columns": [],
+  "rows": [],
+  "colors": [],
+  "labels": [],
+  "yAxis": "Measurement",
+  "xAxis": ""
+}
