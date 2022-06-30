@@ -3,9 +3,11 @@ library(dplyr)
 
 ctx <- tercenCtx()
 
-ctx  %>% 
+df.out<-ctx  %>% 
   select(.y, .ci, .ri) %>% 
   group_by(.ci, .ri) %>%
   summarise(max = max(.y)) %>%
-  ctx$addNamespace() %>%
+  ctx$addNamespace() 
+
+df.out %>%
   ctx$save()
