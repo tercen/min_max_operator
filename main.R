@@ -9,6 +9,7 @@ df.out<-ctx  %>%
   lazy_dt() %>%
   group_by(.ci, .ri) %>%
   summarise(max = max(.y)) %>%
+  as.data.frame()%>%
   ctx$addNamespace() 
 
 ctx$save(df.out)
