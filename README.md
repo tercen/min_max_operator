@@ -1,8 +1,8 @@
-# max operator
+# Min and Max
 
 ##### Description
 
-`max` operator returns the maximum of a set of data points.
+The operator returns the minimum and maximum values of a set of data points.
 
 ##### Usage
 
@@ -12,15 +12,12 @@ Input projection|.
 
 Output relations|.
 ---|---
-`max`        | numeric, max of the input data
-
-##### Details
-
-The operator takes all the values of a cell and returns the value which is the maximum. The computation is done per cell (one value is returned for each input cell).
+`max`        | numeric, maximum of the input data
+`min`        | numeric, minimum of the input data
 
 ##### References
 
-Based on the [max R function](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Extremes.html).
+The computation is based on the [min() and max() R functions](https://stat.ethz.ch/R-manual/R-devel/library/base/html/Extremes.html).
 
 ##### See Also
 

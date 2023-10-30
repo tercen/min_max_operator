@@ -8,7 +8,7 @@ ctx  %>%
   select(.y, .ci, .ri) %>% 
   lazy_dt() %>%
   group_by(.ci, .ri) %>%
-  summarise(max = max(.y)) %>%
+  summarise(max = max(.y), min = min(.y)) %>%
   as_tibble() %>%
   ctx$addNamespace() %>%
   ctx$save()
