@@ -4,7 +4,7 @@ library(dtplyr)
 
 ctx <- tercenCtx()
 
-ctx  %>% 
+ctx %>% 
   select(.y, .ci, .ri) %>% 
   lazy_dt() %>%
   group_by(.ci, .ri) %>%
