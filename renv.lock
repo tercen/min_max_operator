@@ -49,29 +49,16 @@
       ],
       "Hash": "e8a22846fff485f0be3770c2da758713"
     },
-    "assertthat": {
-      "Package": "assertthat",
-      "Version": "0.2.1",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "tools"
-      ],
-      "Hash": "50c838a310445e954bc13f26f26a6ecf"
-    },
     "cli": {
       "Package": "cli",
-      "Version": "2.3.1",
+      "Version": "3.6.1",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
-        "assertthat",
-        "glue",
-        "methods",
         "utils"
       ],
-      "Hash": "3e3f28efcadfda442cd18651fbcbbecf"
+      "Hash": "89e6d8219950eac806ae0c489052048a"
     },
     "crayon": {
       "Package": "crayon",
@@ -85,6 +72,16 @@
       ],
       "Hash": "e75525c55c70e5f4f78c9960a4b402e9"
     },
+    "curl": {
+      "Package": "curl",
+      "Version": "4.3",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "2b7d10581cc730804e9ed178c8374bd6"
+    },
     "data.table": {
       "Package": "data.table",
       "Version": "1.14.0",
@@ -96,20 +93,9 @@
       ],
       "Hash": "d1b8b1a821ee564a3515fa6c6d5c52dc"
     },
-    "digest": {
-      "Package": "digest",
-      "Version": "0.6.27",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "R",
-        "utils"
-      ],
-      "Hash": "a0cbe758a531d054b537d16dff4d58a1"
-    },
     "dplyr": {
       "Package": "dplyr",
-      "Version": "1.0.4",
+      "Version": "1.0.5",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
@@ -127,7 +113,7 @@
         "utils",
         "vctrs"
       ],
-      "Hash": "01c82e3b053eb7660a8ace8d932265b8"
+      "Hash": "d0d76c11ec807eb3f000eba4e3eb0f68"
     },
     "dtplyr": {
       "Package": "dtplyr",
@@ -192,17 +178,43 @@
       ],
       "Hash": "6efd734b14c6471cfe443345f3e35e29"
     },
-    "lifecycle": {
-      "Package": "lifecycle",
-      "Version": "1.0.0",
+    "httr": {
+      "Package": "httr",
+      "Version": "1.4.2",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
         "R",
+        "R6",
+        "curl",
+        "jsonlite",
+        "mime",
+        "openssl"
+      ],
+      "Hash": "a525aba14184fec243f9eaec62fbed43"
+    },
+    "jsonlite": {
+      "Package": "jsonlite",
+      "Version": "1.7.2",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "methods"
+      ],
+      "Hash": "98138e0994d41508c7a6b84a0600cfcb"
+    },
+    "lifecycle": {
+      "Package": "lifecycle",
+      "Version": "1.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
         "glue",
         "rlang"
       ],
-      "Hash": "3471fb65971f1a7b2d4ae7848cf2db8d"
+      "Hash": "001cecbeac1cff9301bdc3775ee46a86"
     },
     "magrittr": {
       "Package": "magrittr",
@@ -210,6 +222,16 @@
       "Source": "Repository",
       "Repository": "RSPM",
       "Hash": "41287f1ac7d28a92f0a286ed507928d3"
+    },
+    "mime": {
+      "Package": "mime",
+      "Version": "0.10",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "tools"
+      ],
+      "Hash": "26fa77e707223e1ce042b2b5d09993dc"
     },
     "mtercen": {
       "Package": "mtercen",
@@ -230,7 +252,7 @@
     },
     "pillar": {
       "Package": "pillar",
-      "Version": "1.5.0",
+      "Version": "1.5.1",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
@@ -244,7 +266,7 @@
         "utils",
         "vctrs"
       ],
-      "Hash": "39a778e4e487ded8b1bf5bb617c567b3"
+      "Hash": "24622aa4a0d3de3463c34513edca99b2"
     },
     "pkgconfig": {
       "Package": "pkgconfig",
@@ -255,18 +277,6 @@
         "utils"
       ],
       "Hash": "01f28d4278f15c76cddbea05899c5d6f"
-    },
-    "purrr": {
-      "Package": "purrr",
-      "Version": "0.3.4",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Requirements": [
-        "R",
-        "magrittr",
-        "rlang"
-      ],
-      "Hash": "97def703420c8ab10d8f0e6c72101e02"
     },
     "renv": {
       "Package": "renv",
@@ -280,14 +290,21 @@
     },
     "rlang": {
       "Package": "rlang",
-      "Version": "0.4.10",
+      "Version": "1.1.1",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "utils"
       ],
-      "Hash": "599df23c40a4fce9c7b4764f28c37857"
+      "Hash": "a85c767b55f0bf9b7ad16c6d7baee5bb"
+    },
+    "rstudioapi": {
+      "Package": "rstudioapi",
+      "Version": "0.13",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Hash": "06c85365a03fdaf699966cc1d3cf53ea"
     },
     "sys": {
       "Package": "sys",
@@ -305,45 +322,35 @@
     },
     "tercen": {
       "Package": "tercen",
-      "Version": "0.12.7",
-      "Source": "GitHub",
-      "Remotes": "tercen/tercenApi@0.12.7",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "teRcen",
-      "RemoteUsername": "tercen",
-      "RemoteRef": "0.12.7",
-      "RemoteSha": "b6872f66ae4de70420c80c834e6e4da076fee2d3",
+      "Version": "0.13.0",
+      "Source": "Repository",
+      "Repository": "TERCEN",
       "Requirements": [
         "R6",
         "dplyr",
+        "httr",
         "mtercen",
         "openssl",
+        "rstudioapi",
         "teRcenHttp",
         "tercenApi",
         "tibble",
         "uuid",
         "yaml"
       ],
-      "Hash": "8ed69059792b34fb7dd616d4a6a32eda"
+      "Hash": "2b99817b3a000b5b4591b5173947a0ac"
     },
     "tercenApi": {
       "Package": "tercenApi",
-      "Version": "0.12.7",
-      "Source": "GitHub",
-      "Remotes": "tercen/teRcenHttp@1.0.21",
-      "RemoteType": "github",
-      "RemoteHost": "api.github.com",
-      "RemoteRepo": "tercenApi",
-      "RemoteUsername": "tercen",
-      "RemoteRef": "0.12.7",
-      "RemoteSha": "2c42ab2edef2365bd5d654be331a4ac6e93250f0",
+      "Version": "0.12.8",
+      "Source": "Repository",
+      "Repository": "TERCEN",
       "Requirements": [
         "R6",
         "teRcenHttp",
         "yaml"
       ],
-      "Hash": "cc1559c7c5b4030cca90a3d324e19b9b"
+      "Hash": "e92d54419184d7f403d082988a3c41c3"
     },
     "tibble": {
       "Package": "tibble",
@@ -367,28 +374,29 @@
     },
     "tidyselect": {
       "Package": "tidyselect",
-      "Version": "1.1.0",
+      "Version": "1.2.0",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
-        "ellipsis",
+        "cli",
         "glue",
-        "purrr",
+        "lifecycle",
         "rlang",
-        "vctrs"
+        "vctrs",
+        "withr"
       ],
-      "Hash": "6ea435c354e8448819627cf686f66e0a"
+      "Hash": "79540e5fcd9e0435af547d885f184fd5"
     },
     "utf8": {
       "Package": "utf8",
-      "Version": "1.1.4",
+      "Version": "1.2.1",
       "Source": "Repository",
       "Repository": "RSPM",
       "Requirements": [
         "R"
       ],
-      "Hash": "4a5081acfb7b81a572e4384a7aaf2af1"
+      "Hash": "c3ad47dc6da0751f18ed53c4613e3ac7"
     },
     "uuid": {
       "Package": "uuid",
@@ -402,17 +410,30 @@
     },
     "vctrs": {
       "Package": "vctrs",
-      "Version": "0.3.6",
+      "Version": "0.6.3",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
-        "digest",
-        "ellipsis",
+        "cli",
         "glue",
+        "lifecycle",
         "rlang"
       ],
-      "Hash": "5cf1957f93076c19fdc81d01409d240b"
+      "Hash": "d0ef2856b83dc33ea6e255caf6229ee2"
+    },
+    "withr": {
+      "Package": "withr",
+      "Version": "2.5.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "grDevices",
+        "graphics",
+        "stats"
+      ],
+      "Hash": "c0e49a9760983e81e55cdd9be92e7182"
     },
     "yaml": {
       "Package": "yaml",
