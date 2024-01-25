@@ -1,10 +1,14 @@
 {
   "name": "Min and Max",
   "description": "Calculate the minimum and maximum values in a cell",
-  "tags": ["basic statistics"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/min_max_operator"],
+  "tags": [
+    "descriptive statistics"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/min_max_operator"
+  ],
   "properties": []
 }
-
-
