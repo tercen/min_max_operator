@@ -18,7 +18,28 @@
     "inputSpecs": [
       {
         "kind": "CrosstabSpec",
-        "metaFactors": [],
+        "metaFactors": [
+          {
+            "kind": "MetaFactor",
+            "name": "Variable",
+            "type": "",
+            "description": "Variable identifiers",
+            "ontologyMapping": "variable",
+            "crosstabMapping": "column",
+            "cardinality": "1..n",
+            "factors": []
+          },
+          {
+            "kind": "MetaFactor",
+            "name": "Observation",
+            "type": "",
+            "description": "Observation identifiers",
+            "ontologyMapping": "observation",
+            "crosstabMapping": "row",
+            "cardinality": "1..n",
+            "factors": []
+          }
+        ],
         "axis": [
           {
             "kind": "AxisSpec",
