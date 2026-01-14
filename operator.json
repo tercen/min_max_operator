@@ -25,7 +25,7 @@
             "type": "",
             "description": "Variable identifiers",
             "ontologyMapping": "variable",
-            "crosstabMapping": "column",
+            "crosstabMapping": "row",
             "cardinality": "0..n",
             "factors": []
           },
@@ -35,7 +35,7 @@
             "type": "",
             "description": "Observation identifiers",
             "ontologyMapping": "observation",
-            "crosstabMapping": "row",
+            "crosstabMapping": "column",
             "cardinality": "0..n",
             "factors": []
           }
