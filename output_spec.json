@@ -1,0 +1,39 @@
+{
+  "outputSpecs": [
+    {
+      "kind": "OperatorJoinSpec",
+      "joinOperators": [
+        {
+          "kind": "JoinOperator",
+          "joinType": "left",
+          "leftPair": {
+            "kind": "ColumnPair",
+            "lColumns": [
+              "Variable",
+              "Observation"
+            ],
+            "rColumns": [
+              "Variable",
+              "Observation"
+            ]
+          },
+          "rightRelation": {
+            "kind": "TableRelation",
+            "attributes": [
+              {
+                "kind": "Attribute",
+                "name": "max",
+                "type": "double"
+              },
+              {
+                "kind": "Attribute",
+                "name": "min",
+                "type": "double"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
